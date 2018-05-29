@@ -4,8 +4,8 @@
 // @category       Controls
 // @version        0.2.13.20180529
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
-// @updateURL      https://github.com/Loskir/ingress-intel-total-conversion/raw/Loskir-trying-polyline/plugins/bookmarks-by-zaso.user.js
-// @downloadURL    https://github.com/Loskir/ingress-intel-total-conversion/raw/Loskir-trying-polyline/plugins/bookmarks-by-zaso.user.js
+// @updateURL      https://github.com/Loskir/ingress-intel-total-conversion/raw/master/plugins/bookmarks-by-zaso.user.js
+// @downloadURL    https://github.com/Loskir/ingress-intel-total-conversion/raw/master/plugins/bookmarks-by-zaso.user.js
 // @description    [iitc-20180529] Save your favorite Maps and Portals and move the intel map with a click. Works with sync.
 // @include        https://*.ingress.com/intel*
 // @include        http://*.ingress.com/intel*
