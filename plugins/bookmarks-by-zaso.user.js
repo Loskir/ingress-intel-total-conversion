@@ -2,7 +2,7 @@
 // @id             iitc-plugin-bookmarks@ZasoGD
 // @name           IITC plugin: Bookmarks for maps and portals
 // @category       Controls
-// @version        0.2.12.@@DATETIMEVERSION@@
+// @version        0.2.13.@@DATETIMEVERSION@@
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @updateURL      @@UPDATEURL@@
 // @downloadURL    @@DOWNLOADURL@@
@@ -829,10 +829,11 @@
       // TODO: add an API to draw-tools rather than assuming things about its internals
 
       var layer, layerType;
-      if(latlngs.length == 2) {
+      if (latlngs.length == 2 || $('#bkmrksAsPolyline').prop('checked')) {
         layer = L.geodesicPolyline(latlngs, window.plugin.drawTools.lineOptions);
         layerType = 'polyline';
-      } else {
+      } 
+      else {
         layer = L.geodesicPolygon(latlngs, window.plugin.drawTools.polygonOptions);
         layerType = 'polygon';
       }
@@ -944,6 +945,9 @@
         + '<label style="margin-bottom: 9px; display: block;">'
         + '<input style="vertical-align: middle;" type="checkbox" id="bkmrkClearSelection" checked>'
         + ' Clear selection after drawing</label>'
+        + '<label style="margin-bottom: 9px; display: block;">'
+        + '<input style="vertical-align: middle;" type="checkbox" id="bkmrkAsPolyline" checked>'
+        + ' Use polyline instead of polygon</label>'
         + '<p style="margin-bottom:9px;color:red">You must select 2 or 3 portals!</p>'
         + '<div onclick="window.plugin.bookmarks.autoDrawOnSelect();return false;">'
         + element
