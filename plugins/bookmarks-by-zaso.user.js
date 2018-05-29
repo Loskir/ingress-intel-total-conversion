@@ -838,7 +838,7 @@ plugin_info.pluginId = 'bookmarks-by-zaso';
       // TODO: add an API to draw-tools rather than assuming things about its internals
 
       var layer, layerType;
-      if (latlngs.length == 2 || $('#bkmrksAsPolyline').prop('checked')) {
+      if (latlngs.length == 2 || $('#bkmrkAsPolyline').prop('checked')) {
         layer = L.geodesicPolyline(latlngs, window.plugin.drawTools.lineOptions);
         layerType = 'polyline';
       } 
